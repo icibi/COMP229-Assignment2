@@ -1,0 +1,23 @@
+body{
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.logo {
+    text-align: center;
+}
+
+hr {
+    border-style: solid;
+    border-color: rgb(10, 51, 19);
+    border-width: 1px;
+}
+    
+

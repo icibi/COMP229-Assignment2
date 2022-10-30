@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<!--Created by Irin Cibi (301248509)-->
+<head> 
+<meta charset=utf-8> 
+<title>Assignment 4</title> 
+<link href="assignment4.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div>
+<div class="logo">
+<img src="logo.jpg" height="140" width="567"></div>
+<hr>
+
+<p>A place where the spirit of camaraderie and competition have been in continuous play for more than 100 years - our members and guests have built an authentic, warm and inspiring home away from home, for those who know and appreciate the best.
+Our welcoming nature, generous hospitality, love of the open country and thrill of competition, have created an environment where families, friends, colleagues and guests can comfortably come together.
+<br>Find your own challenges, participate in competition, refresh your perspectives and socially enrich your world through a uniquely curated golf-inspired lifestyle.
+<b>Become a member today !!</b></p><br>
+
+
+<img src="11.jpg" height="150" width="230">
+<img src="22.jpg" height="150" width="230">
+<img src="33.jpeg" height="150" width="230"> 
+<img src="44.jpg" height="150" width="230">
+<br><br>
+
+<hr>
+<h1>Member Registration Form</h1>
+<h3>Please complete all the fields below: </h3>
+
+<div>
+
+<form onsubmit="ValidateCourses()">
+<div class="form-group">
+<label for="name">Name: </label>
+<input type='text' id='name' name='name' required class='form-control form-control-sm'>
+</div><br>
+
+<div class="form-group">
+<label for="postal">Postal: </label>
+<input type='text' id='postal' name='postal' required class='form-control form-control-sm' pattern="[A-Za-z][0-9][A-Za-z][0-9][A-Za-z][0-9]">
+</div><br>
+
+<div class="form-group">
+<label for="province">Province: </label>
+<select required id='province' name='province' class='form-control form-control-sm'>
+<option>QC</option>
+<option>ON</option>
+<option>MN</option>
+<option>SK</option>
+<option>AB</option>
+<option>BC</option>
+</select>
+</div><br>
+
+<div class="form-group">
+<label for="age">Age:</label>
+<input type='number' id='age' name='age' min='18' required class='form-control form-control-sm'>
+</div><br>
+
+<div class="form-group">
+<label for="email">Email:</label>
+<input type='email' id='email' name='email' required class='form-control form-control-sm' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+</div><br>
+
+<div class="form-group">
+<label for="password">Password:</label>
+<input onkeyup='check();' type='password' id='password' name='password' required class='form-control form-control-sm' pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+</div><br>
+
+<div class="form-group">
+<label for="cnfpassword">Confirm Password:</label>
+<input onkeyup='check();' type='password' id='cnfpassword' name='cnfpassword' required class='form-control form-control-sm'  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+<span id='message'></span>
+</div><br>
+
+<input type='submit' value='Submit' class='btn btn-primary btn-sm'>
+
+</form>
+</div>
+</div>
+    
+<hr>
+<h6><p>&copy; Copyright Irin Cibi (301248509) COMP213 - Semester 1</p></h6>
+    
+<script src="assignment4.js"></script>
+
+</body>
+
+</html>
+</html>

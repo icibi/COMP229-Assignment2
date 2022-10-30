@@ -1,0 +1,61 @@
+<!DOCTYPE html5>
+<html lang="en">
+<!--Created by Irin Cibi (301248509)-->
+<head>
+<meta charset="utf-8">
+<title>Assignment 5</title>
+
+<style>
+#scoreButton, #speedButton {
+    background-color: #f8b680; 
+    color: #b65506; 
+    border: 2px solid #b65506;
+    width: 100px;
+    height: 40px;
+}
+
+body{
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(237, 247, 184);
+}
+
+#score{
+font-size: 20px;
+color: rgb(17, 16, 16);
+}
+
+#title {
+font-size: 30px;
+color: rgb(10, 10, 10);
+}
+</style>
+
+</head>
+<body>
+<table>
+<tr>
+<td style="width:300px;">
+<div id = "score"></div>
+<div id = "title">BugSmasher</div>
+</td>
+<td style="width:200px;">
+<button id = "scoreButton"  onclick = "resetScore()">Reset Score</button></td>
+<td><button id = "speedButton" onclick = "resetSpeed()">Reset Speed</button></td>
+</tr>
+</table>
+
+<p>*Right click on the page and select inspect to start the game.*</p>
+
+<div id = "theCanvas"></div>
+<script src="assignment5.js"></script>
+</body>
+
+<br><br>
+
+<hr style="border-style: solid; border-color: rgb(27, 27, 27); border-width: 1px;">
+<p>&copy; Copyright Irin Cibi (301248509) COMP213 - Semester 1</p>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Created By Irin Cibi (301248509)-->
+<head>
+<meta charset="utf-8">
+<title>Assignment 1</title>
+<style>
+    body {
+    background-image: url('bg1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+</style>
+</head>
+
+
+<div style="width: 980px; margin-left: auto; margin-right: auto;">
+<body style="font-size: 17px; font-family: 'Times New Roman', Times, serif; background-color: rgb(217, 252, 232);">
+
+<div class="bmr-calculator1">
+<h1>Basal Metabolic Rate (BMR) Calculator (Metric)</h1></td>
+<hr style="border-style: solid; border-color: rgb(27, 27, 27); border-width: 1px;"> 
+    
+<p>We use the Harris Benedict equation to calculate your BMR. The Harris-Benedict equation (also called the Harris-Benedict principle) is a method used to estimate an individual's basal metabolic rate (BMR).<br>
+The estimated BMR value may be multiplied by a number that corresponds to the individual's activity level; the resulting number is the approximate daily kilocalorie intake to maintain the current body weight.
+The Harris-Benedict equation may be used to assist weight loss — by reducing the kilocalorie intake number below the estimated maintenance intake of the equation.<br>The given calculator is in the metric system, it is also available in <a href="assignment1.html" target="_blank">Imperial system.</a></p>
+
+<div class="controls">
+<fieldset>
+<legend>Metric System</legend>
+<form>
+<h3>Age</h3>
+<input type="text" id="age" value="23" />
+
+<div class="gender">
+<h3>Gender</h3>
+<input type="radio" id="male" value="male" name="gender" checked />
+<label for="male">Male</label>
+<input type="radio" id="female" value="female" name="gender" />
+<label for="female">Female</label>
+</div>
+
+<div class="height">
+<h3>Height (cm)</h3>
+<input type="text" id="height" value="165" />
+</div>
+
+<div class="weight">
+<h3>Weight (kg)</h3>
+<input type="text" id="weight" value="72" />
+</div>
+</form>
+</div>
+<br>
+
+<div class="result">
+<button class="calculate-btn">Calculate</button>
+
+<div class="result-message">
+<span class="calories">1,641</span> Calories per day
+</div>
+
+<div class="error-message">
+<p>Please enter all the details correctly.</p>
+</div>
+</div>
+</fieldset>
+</div>
+
+<script src="assignment_1.js"></script>
+</body>
+
+<hr style="border-style: solid; border-color: rgb(27, 27, 27); border-width: 1px;">
+<p>&copy; Copyright Irin Cibi (301248509) COMP213 - Semester 1</p>
+</div>
+</html>

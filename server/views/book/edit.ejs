@@ -1,0 +1,71 @@
+<!-------------------------------------
+            Assingment 2
+        Irin Cibi - 301248509
+COMP229 - Web Application Development
+          29 October, 2022
+-------------------------------------->
+
+<!-- Used code from Week4.zip from eCentennial-->
+
+<%- include ../partials/header.ejs %> <%- include ../partials/main_nav.ejs %>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+<div class="row">
+<div class="col-md-offset-3 col-md-6">
+<h1><%= title %></h1>
+<hr style="border-style: solid; border-color: rgb(27, 27, 27); border-width: 1px;"> 
+<form class="form" method="post">
+<div class="form-group">
+<label for="nameTextField">Name: </label>
+<input
+  type="text"
+  class="form-control"
+  id="nameTextField"
+  placeholder="name"
+  name="name"
+    value="<%= book.name %>"
+  required
+/>
+</div>
+
+<div class="form-group">
+<label for="contactTextField">Contact: </label>
+<input
+  type="text"
+  class="form-control"
+  id="contactTextField"
+  placeholder="contact"
+  name="contact"
+  value="<%= book.contact %>"
+  required
+/>
+</div>
+
+<div class="form-group">
+<label for="emailTextField">Email id: </label>
+<input
+  type="text"
+  class="form-control"
+  id="emailTextField"
+  placeholder="email"
+  name="email"
+  value="<%= book.email %>"
+  required
+/>
+</div>
+
+<button class="btn btn-primary" type="submit">
+<i class="fas fa-edit"></i>Submit</button>
+
+<a href="/business-contact" class="btn btn-warning">
+<i class="fas fa-undo"></i>Cancel</a>
+
+<a href="/business-contact/delete/<%= book._id %>" class="btn btn-danger btn-sm">
+<i class="fas fa-trash-alt"></i> Delete</a>
+
+</form>
+</div>
+</div>
+</div>
+<%- include ../partials/bottom_nav.ejs %> <%- include ../partials/footer.ejs %>
